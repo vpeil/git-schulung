@@ -78,17 +78,22 @@ $ git config --global user.email "..."
 
 ---
 
-##
+# Ein einfacher git-Workflow
+
 
 ```bash
-$ git init
+$ git init testprojekt
+$ cd testprojekt
+
+# README.md anlegen
+$ git add . # oder besser git add README.md
+
+$ git status
+
+$ git commit -m "README erstellt"
+
 $ git status
 $ git log
-$ git add
-$ git rm
-$ git commit
-$ git pull
-$ git push
 ```
 
 ---
