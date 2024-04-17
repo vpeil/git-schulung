@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <title>git-Schulung</title>
     <meta charset="utf-8">
     <style>
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -21,7 +21,7 @@
 
 class: center, middle
 
-# git & Github Classrooms für Lehrkräfte
+# git & github classrooms für Lehrkräfte
 
 ### Vitali Peil
 
@@ -29,7 +29,9 @@ class: center, middle
 
 ---
 
-# Vorstellung
+# Vorstellungsrunde
+
+---
 
 - Vitali Peil
 - seit 15 Jahren an der Universitätsbibliothek Bielefeld
@@ -43,10 +45,9 @@ class: center, middle
 
 # Agenda
 
-1. Introduction
-2. Deep-dive
-3. ...
-4. Hands-on workshop
+1. Einführung in git
+2. Praktisches Arbeiten mit git und github
+3. Praktisches Arbeiten mit github Classrooms
 
 ---
 
@@ -80,12 +81,12 @@ $ git config --global user.email "..."
 
 # Ein einfacher git-Workflow
 
-
 ```bash
 $ git init testprojekt
 $ cd testprojekt
 
-# README.md anlegen
+# README.md anlegen und dann hinzufügen
+
 $ git add . # oder besser git add README.md
 
 $ git status
@@ -98,21 +99,79 @@ $ git log
 
 ---
 
-# git: Specials
+# Ein erweiterter git-Workflow
 
-## git revert
+```bash
+$ git remote add origin https://github.com/vpeil/perl-map-tube-bielefeld.git
+$ git remote -v
 
-## git merge
+# lokales Repository synchronisieren
+$ git pull origin main
+$ git push -u origin main # zukünftig dann nur noch "git push" notwendig
 
-## git checkout
+# und dann ad infinitum:
+# Datei ändern, git add {Datei(en)}, git commit, git pull, git push
+```
 
-## git rebase
+# ... und noch 
+
+```bash
+# ich habe was falsch gemacht!
+$ git revert {commit}
+
+```
 
 ---
 
-# Workshop
+# .gitignore
 
-## Endlich: Hands-on!
+### Eine Datei, die zu ignorierende Dateien/Muster enthält.
+### Sollte in einem (richtigen) Projekt angelegt werden!
+
+---
+
+# Hands-on!
+
+### Endlich.
+
+---
+
+
+
+---
+
+# Aufgabe 1
+
+### a) Erstellen Sie ein neues git-Projekt! (lokal/github; in welcher Reihenfolge?)
+### b) Erstellen Sie ein Issue.
+### c) 
+
+---
+
+# Aufgabe 2
+
+### a) "Forken" Sie ein Projekt (1).
+### b) Klonen Sie dieses nun lokal auf Ihr Gerät.
+### c) Erstellen Sie lokal einen neuen Zweig und füge Sie eine Änderung hinzu.
+### d) Erstellen Sie einen Pull request für diese Änderung in das ursprüngliche Repository.
+
+(1) https://github.com/vpeil
+
+---
+
+# Aufgabe 3
+
+### Gruppenarbeit!
+### a) Erstellen Sie ein Projekt und laden Sie die anderen ein.
+### b)
+
+---
+
+# github Classrooms
+
+---
+
+
 
 ---
 
@@ -122,6 +181,8 @@ $ git log
 - https://github.com/git/git/blob/master/Documentation/giteveryday.txt
 - https://git-scm.com/book/en/v2
 - https://www.atlassian.com/git
+
+- Remark.js https://remarkjs.com
 
 ---
 
