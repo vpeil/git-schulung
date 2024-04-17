@@ -113,12 +113,30 @@ $ git push -u origin main # zukünftig dann nur noch "git push" notwendig
 # Datei ändern, git add {Datei(en)}, git commit, git pull, git push
 ```
 
-# ... und noch 
+# ... und jetzt mit Verzweigungen (Branches)
+
+```bash
+$ git branch
+
+$ git switch -c bug_01
+
+# Dateien ändern ...
+
+$ git add -u
+
+$ git commit -m"fixes #2. Bug in user account ..."
+$ git push origin bug_01
+```
+
+# 
+
+# ... was ist mit Fehlern?
 
 ```bash
 # ich habe was falsch gemacht!
 $ git revert {commit}
-
+$ git log
+$ ...
 ```
 
 ---
@@ -127,7 +145,7 @@ $ git revert {commit}
 
 ### Eine Datei, die zu ignorierende Dateien/Muster enthält.
 ### Sollte in einem (richtigen) Projekt angelegt werden!
-
+### Sollte in git eingecheckt werden.
 ---
 
 # Hands-on!
@@ -136,7 +154,7 @@ $ git revert {commit}
 
 ---
 
-
+# Arbeitsumgebung eingerichet?
 
 ---
 
@@ -144,7 +162,8 @@ $ git revert {commit}
 
 ### a) Erstellen Sie ein neues git-Projekt! (lokal/github; in welcher Reihenfolge?)
 ### b) Erstellen Sie ein Issue.
-### c) 
+### c) Führen Sie eine Änderungen passend zu dem Issue durch und veröffentlichen Sie diese auf github.
+### d) Schließen Sie das Issue.
 
 ---
 
@@ -155,7 +174,7 @@ $ git revert {commit}
 ### c) Erstellen Sie lokal einen neuen Zweig und füge Sie eine Änderung hinzu.
 ### d) Erstellen Sie einen Pull request für diese Änderung in das ursprüngliche Repository.
 
-(1) https://github.com/vpeil
+(1) https://github.com/vpeil/testprojekt
 
 ---
 
@@ -163,15 +182,12 @@ $ git revert {commit}
 
 ### Gruppenarbeit!
 ### a) Erstellen Sie ein Projekt und laden Sie die anderen ein.
-### b)
+### b) Verabreden Sie, wie Sie miteinander arbeiten wollen.
+### c) Jeder führt jetzt einige Änderungen lokal durch. Versuchen Sie, alle diese Änderungen in den Hauptzweig zu übernehmen.
 
 ---
 
 # github Classrooms
-
----
-
-
 
 ---
 
